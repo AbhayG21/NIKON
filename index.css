@@ -1,0 +1,613 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background-color: rgb(45, 47, 46);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+.topdiv {
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+}
+.topdiv1 {
+    width: 35%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+.topdiv1box1 {
+    /* background-color: aqua; */
+    height: 10%;
+    width: 100%;
+    display: flex;
+}
+.topdiv1box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+}
+.infoBox1 {
+    width: 70%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+}
+.infoBox1 div {
+    width: 30%;
+    height: 2%;
+    background-color: cadetblue;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.infoBox2 {
+    width: 70%;
+    height: 50%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+}
+.infoText {
+    width: 100%;
+    height: 60%;
+    /* background-color: aqua; */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    font-size: 1vw;
+}
+.infoButton {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infoButton button {
+    width: 60%;
+    height: 40%;
+    background-color: cadetblue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+.infoButton button:hover {
+    background-color: transparent;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    color: cadetblue;
+    border: 1px solid cadetblue;
+}
+.sandwichMenu {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.bar1,
+.bar2,
+.bar3 {
+    width: 50%;
+    height: 7%;
+    background-color: black;
+    margin-left: 15%;
+    margin-top: 10%;
+    transition: 0.3s all;
+}
+.bar1 {
+    margin-top: 5%;
+}
+/* .sandwichMenu:hover .bar1
+{
+    transform: translate(0, 17px) rotate(-45deg);
+}
+.sandwichMenu:hover .bar2
+{
+    opacity: 0;
+
+}
+.sandwichMenu:hover .bar3
+{
+    transform: translate(0 ,-17px) rotate(45deg);
+} */
+.companyName {
+    width: 100%;
+    height: 100%;
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.companyName div {
+    margin-left: 5%;
+    width: 40%;
+    height: 100%;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.companyName div div {
+    width: 30%;
+    height: 7%;
+    background-color: cadetblue;
+    transition: 0.4 all;
+}
+.companyName div:hover div {
+    width: 40%;
+}
+.topdiv2 {
+    width: 65%;
+    height: 100%;
+    background-image: url("images/slider-img.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.topdiv2 div {
+    width: 20%;
+    height: 10%;
+    margin-left: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topdiv2 div button {
+    background-color: white;
+    padding: 10%;
+    height: 50%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    /* font-size: 1.4vw; */
+    font-size: 1.1vw;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.topdiv2 div button:hover {
+    background-color: transparent;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    color: white;
+}
+/* .topdiv2 div button a:hover
+{
+    background-color: transparent;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    color: white;
+} */
+
+.secondDiv {
+    height: 97vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgb(163, 67, 24); */
+    /* background-color: cadetblue; */
+    /* box-shadow: 0px 2px 8px -5px black; */
+}
+.secondDiv1 {
+    height: 100%;
+    width: 65%;
+    background-image: url("images/about-img.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 0px 8px -4px black;
+}
+.secondDiv2 {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.thirdDiv {
+    width: 100vw;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+}
+.thirdDiv1 {
+    width: 100%;
+    height: 19%;
+    /* background-color: rgb(228, 228, 228); */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-top: 1px solid rgb(228, 228, 228);
+}
+.thirdDiv1box1 {
+    width: 30%;
+    height: 80%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 3vw;
+}
+.thirdDiv1box2 {
+    width: 10%;
+    height: 3%;
+    background-color: cadetblue;
+    border-radius: 4px;
+    align-self: center;
+    margin-top: 0.5%;
+    transition: 0.2s all;
+}
+.thirdDiv1:hover .thirdDiv1box2 {
+    width: 12%;
+}
+
+.thirdDiv2 {
+    width: 100%;
+    height: 62%;
+    /* background-color: rgb(228, 228, 228); */
+    background-color: white;
+    display: flex;
+}
+.thirdDiv2 div table {
+    height: 100%;
+    width: 75%;
+    border-spacing: 15px;
+    /* border: 1px solid white; */
+    color: white;
+    border-collapse: separate;
+}
+.thirdDiv2 div table td {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* td{
+    border: 1px solid wheat;
+} */
+.thirdDiv2box {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(163,67,24); */
+    background-color: rgb(61, 100, 102);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+}
+.thirdDiv2box:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.thirdDiv2box div {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.thirdDiv2box div:hover {
+    cursor: pointer;
+    background-color: gainsboro;
+}
+.thirdDiv3 {
+    width: 100%;
+    height: 19%;
+    /* background-color: rgb(228, 228, 228); */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thirdDiv3 div button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1vw;
+    color: white;
+}
+.thirdDiv3 div button:hover {
+    background-color: white;
+    /* color: rgb(163, 67, 24); */
+    cursor: pointer;
+    color: cadetblue;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.fourthDiv {
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.fourthdiv1 {
+    width: 35%;
+    height: 100%;
+    /* background-color: rgb(163, 67, 24); */
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fourthHead {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4vw;
+    color: white;
+    /* background-color: antiquewhite; */
+    font-weight: 600;
+}
+.fourthHead div {
+    width: 25%;
+    height: 3%;
+    background-color: white;
+    border-radius: 5px;
+}
+.fourthName {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+    color: white;
+    /* background-color: blue; */
+}
+.name {
+    width: 100%;
+    height: 30%;
+    /* background-color: aqua; */
+}
+.display {
+    width: 100%;
+    height: 100%;
+    /* background-color: bisque; */
+    font-size: 3vw;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fourthLast {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 600;
+}
+.fourthdiv2 {
+    width: 65%;
+    height: 100%;
+    box-shadow: -2px 0px 8px -4px black;
+}
+.fourthdiv2 div {
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fourthdiv2 div div {
+    height: 80%;
+    width: 40%;
+    background-color: black;
+    border-radius: 5%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: -2px 0px 8px -4px black, 2px 0px 8px -4px black,
+        0px 2px 8px -4px black, 0px -2px 8px -4px black;
+    transition: 0.5s all;
+    /* cursor: pointer; */
+    cursor: pointer;
+}
+.fourthdiv2 div div:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    transform-origin: center;
+}
+/* .fourthdiv2 table
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-collapse: separate;
+    /* border-spacing: 35px; */
+
+/* .fourthdiv2 table td
+{ 
+    border: 1px solid black;
+} */
+.fifthDiv {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+}
+.fifthDiv1 {
+    width: 60%;
+    height: 100%;
+}
+.fifthDiv2 {
+    width: 40%;
+    height: 100%;
+    /* background-color: rgb(163, 67, 24); */
+    background-color: cadetblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.fifthDiv2box {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+}
+.fifthDiv2box1 {
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    height: 30%;
+    transition: 0.5s all;
+}
+.fifthDiv2box1:hover {
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+.fifthDiv2box2 {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    /* background-color: antiquewhite; */
+}
+.fifthDiv2box2 div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20%;
+    padding-top: 5px;
+}
+.fifthDiv2box2 div div {
+    margin-right: 15px;
+}
+
+.fifthDiv2box2 div:hover {
+    cursor: pointer;
+    color: rgb(61, 100, 102);
+    /* transform: scaleX(1.5) scaleY(1.5); */
+}
+.fifthDiv2box3 {
+    height: 30%;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: start;
+}
+.fifthDiv2box3 div {
+    /* border: 1px solid black; */
+    height: 55%;
+    width: 10%;
+    padding: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: 0.5s all;
+}
+.fifthDiv2box3 div:hover {
+    cursor: pointer;
+    color: rgb(61, 100, 102);
+    transform: scaleX(1.5) scaleY(1.5);
+    transform-origin: center;
+    /* scale: 1.5; */
+}
+.footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(61, 100, 102);
+    display: flex;
+    align-items: center;
+}
+.footer div {
+    width: 50%;
+    height: 100%;
+}
+.footerLeft {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.3vw;
+    color: white;
+    box-sizing: border-box;
+    margin-left: 2%;
+}
+.footerRight {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.3vw;
+    box-sizing: border-box;
+    margin-right: 2%;
+    /* background-color: antiquewhite; */
+    color: #000;
+}
+.footerRight div {
+    width: 15%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+/* .footerRight div:hover
+{
+    cursor: pointer;
+    color: rgb(61, 100, 102);
+    transform: scaleX(1.5) scaleY(1.5);
+    transform-origin: center;
+} */
+
+.footerRight div a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s all;
+    font-size: 1.3vw;
+}
+
+.footerRight div a:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    transform-origin: center;
+}
+p {
+    font-size: 2vw;
+}
+span {
+    font-size: 2.5vw;
+}
