@@ -218,6 +218,16 @@ body {
     justify-content: center;
     align-items: flex-start;
 }
+span a
+{
+    text-decoration: none;
+    color: cadetblue;
+    transition: 0.3s all;
+    &:hover
+    {
+        color: rgb(61, 100, 102);
+    }
+}
 .heading
 {
     height: 20%;
