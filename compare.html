@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="compare.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="header">
+            <div class="headerLeft">
+                <div class="topdiv1box1">
+                    <div class="sandwichMenu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div class="companyName">
+                        <div onclick="window.location='index.html'">
+                            NIKON
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headerRight">
+                <div>
+                    <button onclick="window.location='contactUS.html'">
+                        CONTACT US
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- body -->
+
+        <div class="body1">
+            <div class="chooseHead">Choose</div>
+            <div class="chooseMenu">
+                <div class="td1">
+                    <select name="" id="sel1" class="sel">
+                        <option selected disabled value="">
+                            Choose an option
+                        </option>
+                        <option value="D5600">D5600</option>
+                        <option value="D5300">D5300</option>
+                        <option value="D850">D850</option>
+                        <option value="D3500">D3500</option>
+                    </select>
+                </div>
+                <div class="td2">VS</div>
+                <div class="td3">
+                    <select name="" id="sel2" class="sel">
+                        <option selected disabled value="">
+                            Choose an option
+                        </option>
+                        <option value="D5600">D5600</option>
+                        <option value="D3500">D5300</option>
+                        <option value="D850">D850</option>
+                        <option value="D3500">D3500</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="chooseButton" onclick="compFunc()">Compare</button>
+            <div class="output"></div>
+        </div>
+
+        <div class="body2">
+            <div class="left">
+                <div class="leftHead"></div>
+                <div class="left1">
+                    
+                </div>
+                <div class="left2">
+                   
+                </div>
+                <div class="left3">
+                    
+                </div>
+                <div class="left4">
+                    
+                </div>
+                <div class="left5">
+                    
+                </div>
+            </div>
+            <div class="cate">
+                <div class="cateHead"></div>
+                <div class="cate1"></div>
+                <div class="cate2"></div>
+                <div class="cate3"></div>
+                <div class="cate4"></div>
+                <div class="cate5"></div>
+            </div>
+            <div class="right">
+                <div class="rightHead"></div>
+                <div class="right1">
+                    
+                </div>
+                <div class="right2">
+                    
+                </div>
+                <div class="right3">
+                    
+                </div>
+                <div class="right4">
+                    
+                </div>
+                <div class="right5">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="footerLeft">
+                &copy; 2023 All Rights Reserved. Designed by Abhay Gupta
+            </div>
+            <div class="footerRight">
+                <div><a href="index.html" target="_blank">Home</a></div>
+                <div><a href="signIn.html" target="_blank">Login</a></div>
+                <div><a href="signUp.html" target="_blank">Register</a></div>
+                <div>
+                    <a href="contactUs.html" target="_blank">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function compFunc() {
+                select1 = document.querySelector("#sel1");
+                select2 = document.querySelector("#sel2");
+
+                val1 = select1.value;
+                val2 = select2.value;
+                document.querySelector(".leftHead").innerHTML = val1;
+                document.querySelector(".cateHead").innerHTML = "VS";
+                document.querySelector(".rightHead").innerHTML = val2;
+
+                document.querySelector(".cate1").innerHTML =
+                    "Resolution and Sensor";
+                document.querySelector(".cate2").innerHTML =
+                    "Articulating Touchscreen";
+                document.querySelector(".cate3").innerHTML = "Autofocus System";
+                document.querySelector(".cate4").innerHTML =
+                    "Connectivity Options";
+                document.querySelector(".cate5").innerHTML =
+                    "Additional Features";
+
+                left1 = document.querySelector(".left1");
+                left2 = document.querySelector(".left2");
+                left3 = document.querySelector(".left3");
+                left4 = document.querySelector(".left4");
+                left5 = document.querySelector(".left5");
+
+                right1 = document.querySelector(".right1");
+                right2 = document.querySelector(".right2");
+                right3 = document.querySelector(".right3");
+                right4 = document.querySelector(".right4");
+                right5 = document.querySelector(".right5");
+                console.log(val1);
+                if (val1 === "D5600") {
+                    left1.innerHTML =
+                        "It features a 24.2-megapixel DX-format CMOS sensor.";
+
+                    left2.innerHTML =
+                        "The D5600 has a 3.2-inch vari-angle touchscreen LCD, which can be tilted and rotated for flexible shooting angles and allows for touch control of settings and focus points.";
+
+                    left3.innerHTML =
+                        "It features a 39-point autofocus system with nine cross-type sensors, which provides more flexibility and accuracy for tracking moving subjects and selecting focus points.";
+
+                    left4.innerHTML =
+                        "The D5600 offers built-in Wi-Fi and Bluetooth connectivity, allowing for easy wireless transfer of photos to a smartphone or tablet, as well as remote camera control using a mobile app.";
+
+                    left5.innerHTML =
+                        "The D5600 includes some extra features like time-lapse shooting, built-in HDR mode, and a slightly more advanced shooting menu with more creative options.";
+                }
+
+                if (val2 === "D5600") {
+                    right1.innerHTML =
+                        "It has a 24.2-megapixel DX-format CMOS sensor as well. Both cameras have the same resolution sensor.";
+
+                    right2.innerHTML =
+                        "The D3500 lacks a touchscreen, and its LCD is fixed and not adjustable.";
+
+                    right3.innerHTML =
+                        "The D3500 has an 11-point autofocus system, which is still capable but has fewer focus points and cross-type sensors compared to the D5600.";
+
+                    right4.innerHTML =
+                        "The D3500 does not have built-in Wi-Fi or Bluetooth, so transferring photos or remotely controlling the camera requires additional accessories or a computer.";
+
+                    right5.innerHTML =
+                        "The D3500 is more straightforward and lacks some of the advanced shooting modes and creative features found in the D5600.";
+                }
+
+                if (val1 === "D3500") {
+                    left1.innerHTML =
+                        "It features a 24.2-megapixel DX-format CMOS sensor.";
+
+                    left2.innerHTML =
+                        "The D3500 lacks a touchscreen, and its LCD is fixed and not adjustable.";
+
+                    left3.innerHTML =
+                        "The D3500 has an 11-point autofocus system, which is still capable but has fewer focus points and cross-type sensors compared to the D5600.";
+
+                    left4.innerHTML =
+                        "The D3500 does not have built-in Wi-Fi or Bluetooth, so transferring photos or remotely controlling the camera requires additional accessories or a computer.";
+
+                    left5.innerHTML =
+                        "The D3500 is more straightforward and lacks some of the advanced shooting modes and creative features found in the D5600.";
+                }
+                if (val2 === "D3500") {
+                    right1.innerHTML =
+                        "It has a 24.2-megapixel DX-format CMOS sensor as well. Both cameras have the same resolution sensor.";
+
+                    right2.innerHTML =
+                        "The D3500 lacks a touchscreen, and its LCD is fixed and not adjustable.";
+
+                    right3.innerHTML =
+                        "The D3500 has an 11-point autofocus system, which is still capable but has fewer focus points and cross-type sensors compared to the D5600.";
+
+                    right4.innerHTML =
+                        "The D3500 does not have built-in Wi-Fi or Bluetooth, so transferring photos or remotely controlling the camera requires additional accessories or a computer.";
+
+                    right5.innerHTML =
+                        "The D3500 is more straightforward and lacks some of the advanced shooting modes and creative features found in the D5600.";
+                }
+
+                if(val1==="D850")
+                {
+                    left1.innerHTML="It features a 45.7-megapixel full-frame CMOS sensor.";
+
+                    left2.innerHTML="The D850 has a 3.2-inch tilting touchscreen LCD, which can be tilted and rotated for flexible shooting angles and allows for touch control of settings and focus points.";
+
+                    left3.innerHTML="It features a 153-point autofocus system with 99 cross-type sensors, which provides more flexibility and accuracy for tracking moving subjects and selecting focus points.";
+
+                    left4.innerHTML="The D850 offers built-in Wi-Fi and Bluetooth connectivity, allowing for easy wireless transfer of photos to a smartphone or tablet, as well as remote camera control using a mobile app.";
+
+                    left5.innerHTML="The D850 includes some extra features like time-lapse shooting, built-in HDR mode, and a slightly more advanced shooting menu with more creative options.";
+                }
+                if(val2==="D850")
+                {
+                    right1.innerHTML="It has a 45.7-megapixel full-frame CMOS sensor as well. Both cameras have the same resolution sensor.";
+
+                    right2.innerHTML="The D850 lacks a touchscreen, and its LCD is fixed and not adjustable.";
+
+                    right3.innerHTML="The D850 has a 153-point autofocus system with 99 cross-type sensors, which provides more flexibility and accuracy for tracking moving subjects and selecting focus points.";
+
+                    right4.innerHTML="The D850 does not have built-in Wi-Fi or Bluetooth, so transferring photos or remotely controlling the camera requires additional accessories or a computer.";
+
+                    right5.innerHTML="The D850 is more straightforward and lacks some of the advanced shooting modes and creative features found in the D5600.";
+                }
+
+                if(val1==="D5300")
+                {
+                    left1.innerHTML="It features a 24.2-megapixel DX-format CMOS sensor.";
+
+                    left2.innerHTML="The D5300 has a 3.2-inch vari-angle touchscreen LCD, which can be tilted and rotated for flexible shooting angles and allows for touch control of settings and focus points.";
+
+                    left3.innerHTML="It features a 39-point autofocus system with nine cross-type sensors, which provides more flexibility and accuracy for tracking moving subjects and selecting focus points.";
+
+                    left4.innerHTML="The D5300 offers built-in Wi-Fi and Bluetooth connectivity, allowing for easy wireless transfer of photos to a smartphone or tablet, as well as remote camera control using a mobile app.";
+
+                    left5.innerHTML="The D5300 includes some extra features like time-lapse shooting, built-in HDR mode, and a slightly more advanced shooting menu with more creative options.";
+                }
+
+                if(val2==="D5300")
+                {
+                    right1.innerHTML="It has a 24.2-megapixel DX-format CMOS sensor as well. Both cameras have the same resolution sensor.";
+
+                    right2.innerHTML="The D5300 lacks a touchscreen, and its LCD is fixed and not adjustable.";
+
+                    right3.innerHTML="The D5300 has an 11-point autofocus system, which is still capable but has fewer focus points and cross-type sensors compared to the D5600.";
+
+                    right4.innerHTML="The D5300 does not have built-in Wi-Fi or Bluetooth, so transferring photos or remotely controlling the camera requires additional accessories or a computer.";
+
+                    right5.innerHTML="The D5300 is more straightforward and lacks some of the advanced shooting modes and creative features found in the D5600.";
+                }
+            }
+        </script>
+    </body>
+</html>

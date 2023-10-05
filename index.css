@@ -66,7 +66,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
     text-align: justify;
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
 .infoButton {
     /* background-color: aqua; */
@@ -184,7 +184,7 @@ body {
     justify-content: center;
     border: none;
     /* font-size: 1.4vw; */
-    font-size: 1.1vw;
+    font-size: 1.3vw;
     cursor: pointer;
     border: 1px solid white;
 }
