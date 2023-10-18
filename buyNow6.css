@@ -10,9 +10,6 @@ body {
         sans-serif;
     box-sizing: border-box;
     background-color: whitesmoke;
-
-    
-
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -53,7 +50,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 .bar1,
 .bar2,
 .bar3 {
