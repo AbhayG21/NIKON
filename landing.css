@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    /* background-color: rgb(0, 0, 0); */
+    /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif !important; */
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    /* background-image: url(images/landingImg.jpeg);
+     */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+.header {
+    /* background-color: yellowgreen; */
+    /* border-bottom: 2px solid black; */
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.headerLeft {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+.topdiv1box1 {
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.sandwichMenu {
+    width: 13%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    /* flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.bar1,
+.bar2,
+.bar3 {
+    width: 50%;
+    height: 7%;
+    background-color: black;
+    margin-left: 15%;
+    margin-top: 10%;
+    transition: 0.3s all;
+}
+.bar1 {
+    margin-top: 5%;
+}
+.companyName {
+    width: 100%;
+    height: 100%;
+    font-size: 3vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.companyName div {
+    margin-left: 5%;
+    width: 40%;
+    height: 100%;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.companyName div div {
+    width: 20%;
+    height: 7%;
+    background-color: cadetblue;
+    transition: 0.4 all;
+}
+.companyName div:hover div {
+    width: 30%;
+}
+
+.headerRight {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: antiquewhite; */
+}
+.headerRight div {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.headerRight div button {
+    background-color: cadetblue;
+    /* padding: 10%; */
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 1.1vw;
+    cursor: pointer;
+    color: white;
+    border: 1px solid cadetblue;
+}
+.headerRight div button:hover {
+    background-color: transparent;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    color: rgb(61, 100, 102);
+    border: 1px solid cadetblue;
+}
+
+/* body */
+.mainBody
+{
+    /* background-color: wheat; */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wel
+{
+    /* background-color: aliceblue; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.text
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    /* background-color: antiquewhite; */
+    justify-content: center;
+    font-size: 12vw;
+    /* text-shadow:5px 5px 5px black; */
+    
+}
+.bar
+{
+    width: 100%;
+    height: 30%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+}
+.bar div
+{
+    width:15%;
+    height: 13%;
+    background-color: cadetblue;
+    border-radius: 9px;
+    animation-name: widIncrease;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    align-items: center;
+}
+@keyframes widIncrease
+{
+    0%{
+        width: 0%;
+    }
+    50%{
+        height: 15%;
+        width: 50%;
+    }
+    75%{
+        width: 10%;
+    }
+    100%{
+        width: 15%;
+    }
+}
+.but
+{
+    /* background-color: aqua; */
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.but button
+{
+    width: 30%;
+    height: 20%;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-size: 1.5vw;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.2s all;
+}
+.but button:hover
+{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    transition: 0.2s all;
+}
+.footer {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(61, 100, 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10%; */
+}
+
+.footer div {
+    width: 50%;
+    height: 100%;
+}
+.footerLeft {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.3vw;
+    color: white;
+    box-sizing: border-box;
+    margin-left: 2%;
+}
+.footerRight {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.3vw;
+    box-sizing: border-box;
+    margin-right: 2%;
+    /* background-color: antiquewhite; */
+    color: #000;
+}
+.footerRight div {
+    width: 15%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+/* .footerRight div:hover
+{
+    cursor: pointer;
+    color: rgb(61, 100, 102);
+    transform: scaleX(1.5) scaleY(1.5);
+    transform-origin: center;
+} */
+
+.footerRight div a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s all;
+    font-size: 1.3vw;
+}
+
+.footerRight div a:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    transform-origin: center;
+}
