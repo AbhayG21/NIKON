@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif !important; */
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    /* background-image: url(images/landingImg.jpeg);
+     */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+.NIKON
+{
+    color: cadetblue;
+}
+.formm
+{
+    color: cadetblue;
+}
+.searchBut
+{
+    outline: 2px solid cadetblue;
+    color: cadetblue;
+}
+.carMain
+{
+    height: 90vh;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.carMain div
+{
+    height: 100%;
+    width: 100%;
+}
+
+.carMain img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.secondDiv {
+    height: 97vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgb(163, 67, 24); */
+    /* background-color: cadetblue; */
+    /* box-shadow: 0px 2px 8px -5px black; */
+}
+.secondDiv1 {
+    height: 100%;
+    width: 65%;
+    background-image: url("images/accIndexLens.jpeg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 0px 8px -4px black;
+}
+.secondDiv2 {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.infoBox1 {
+    width: 70%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+    font-weight:500;
+}
+.infoBox1 div {
+    width: 30%;
+    height: 2%;
+    background-color: cadetblue;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.infoBox2 {
+    width: 70%;
+    height: 50%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+}
+.infoText {
+    width: 100%;
+    height: 60%;
+    /* background-color: aqua; */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    font-size: 1.1vw;
+}
+.infoButton {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infoButton button {
+    width: 60%;
+    height: 40%;
+    background-color: cadetblue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+.infoButton button:hover {
+    background-color: transparent;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    color: cadetblue;
+    border: 1px solid cadetblue;
+}
+
+
+/* card2 */
+
+.thirdDiv {
+    height: 97vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgb(163, 67, 24); */
+    /* background-color: cadetblue; */
+    /* box-shadow: 0px 2px 8px -5px black; */
+}
+.thirdDiv1 {
+    height: 100%;
+    width: 65%;
+    background-image: url("images/accIndexTri.webp");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 0px 8px -4px black;
+}
+.thirdDiv2 {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.thirdInfoBox1 {
+    width: 70%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+    font-weight:500;
+}
+.thirdInfoBox1 div {
+    width: 30%;
+    height: 2%;
+    background-color: cadetblue;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.thirdInfoBox2 {
+    width: 70%;
+    height: 50%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+}
+.thirdInfoText {
+    width: 100%;
+    height: 60%;
+    /* background-color: aqua; */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    font-size: 1.1vw;
+}
+.thirdInfoButton {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thirdInfoButton button {
+    width: 60%;
+    height: 40%;
+    background-color: cadetblue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+.thirdInfoButton button:hover {
+    background-color: transparent;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    color: cadetblue;
+    border: 1px solid cadetblue;
+}
+
+.thirdInfoBox1 {
+    width: 70%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+}
+.thirdInfoBox1 div {
+    width: 30%;
+    height: 2%;
+    background-color: cadetblue;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.thirdInfoBox2 {
+    width: 70%;
+    height: 50%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+}
+.thirdInfoText {
+    width: 100%;
+    height: 60%;
+    /* background-color: aqua; */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    font-size: 1.1vw;
+}
+.thirdInfoButton {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thirdInfoButton button {
+    width: 60%;
+    height: 40%;
+    background-color: cadetblue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+.thirdInfoButton button:hover {
+    background-color: transparent;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    color: cadetblue;
+    border: 1px solid cadetblue;
+}
+.footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(61, 100, 102);
+    display: flex;
+    align-items: center;
+}
+.footer div {
+    width: 50%;
+    height: 100%;
+}
+.footerLeft {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.3vw;
+    color: white;
+    box-sizing: border-box;
+    margin-left: 2%;
+}
+.footerRight {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.3vw;
+    box-sizing: border-box;
+    margin-right: 2%;
+    /* background-color: antiquewhite; */
+    color: #000;
+}
+.footerRight div {
+    width: 15%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+/* .footerRight div:hover
+{
+    cursor: pointer;
+    color: rgb(61, 100, 102);
+    transform: scaleX(1.5) scaleY(1.5);
+    transform-origin: center;
+} */
+
+.footerRight div a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s all;
+    font-size: 1.3vw;
+}
+
+.footerRight div a:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    transform-origin: center;
+}
+p {
+    font-size: 2vw;
+}
+span {
+    font-size: 2.5vw;
+}
