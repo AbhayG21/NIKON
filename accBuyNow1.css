@@ -9,7 +9,7 @@ body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
     box-sizing: border-box;
-    background-color: whitesmoke;
+    background-color: white;
 
     
 
@@ -108,11 +108,12 @@ body {
     /* background-color: antiquewhite; */
 }
 .headerRight div {
-    width: 30%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 2%;
     /* background-color: aqua; */
 }
 .headerRight div button {

@@ -5,6 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="accBuyNow1.css" />
+        <script
+            src="https://kit.fontawesome.com/bda0dcd4de.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <!-- Header -->
@@ -17,7 +32,7 @@
                         <div class="bar3"></div>
                     </div>
                     <div class="companyName">
-                        <div onclick="window.location='index.html'">
+                        <div onclick="window.location='landing.html'">
                             NIKON
                             <div></div>
                         </div>
@@ -25,11 +40,29 @@
                 </div>
             </div>
             <div class="headerRight">
-                <div>
+                <div class="container-fluid d-flex justify-content-end">
+                    <div class="xyz" id="items">
+                        <span>Items: </span>
+                        <span id="uitm">0</span>
+                    </div>
+                    <a class="btn" style="margin-right: 3%" href="payment.html">
+                        <i class="fas fa-shopping-bag fa-2x"></i
+                    ></a>
+                    <button
+                    ondblclick="clear(this)"
+                    class="btn rounded-2"
+                        id="clearr"
+                        value="0"
+                        
+                    >
+                        CLEAR
+                    </button>
+                </div>
+                <!-- <div>
                     <button onclick="window.location='contactUS.html'">
                         CONTACT US
                     </button>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -38,41 +71,45 @@
             <div class="leftDiv">
                 <div class="mainImg">
                     <!-- <div></div> -->
-                    <img src="images/D7500img1.webp" alt="" id="change" />
+                    <img src="images/accBuyNow1main.png" alt="" />
                 </div>
                 <div class="optImg">
                     <div>
                         <img
-                            src="images/D7500img1.webp"
+                            src="images/accD3500.png"
                             alt=""
-                            id="images/D7500img1.webp"
+                            class="D3500"
+                            id="₹14,000"
                             onclick="changeImage(this)"
                             style="cursor: pointer"
                         />
                     </div>
                     <div>
                         <img
-                            src="images/D7500img2.png"
+                            src="images/accD5300.png"
                             alt=""
-                            id="images/D7500img2.png"
+                            class="D5300"
+                            id="₹16,000"
                             onclick="changeImage(this)"
                             style="cursor: pointer"
                         />
                     </div>
                     <div>
                         <img
-                            src="images/D7500img3.png"
+                            src="images/accD750.png"
                             alt=""
-                            id="images/D7500img3.png"
+                            class="D750"
+                            id="₹10,500"
                             onclick="changeImage(this)"
                             style="cursor: pointer"
                         />
                     </div>
                     <div>
                         <img
-                            src="images/D7500img4.png"
-                            alt=""
-                            id="images/D7500img4.png"
+                            src="images/accD7500.png"
+                            alt="9000"
+                            class="D7500"
+                            id="₹19,000"
                             onclick="changeImage(this)"
                             style="cursor: pointer"
                         />
@@ -96,40 +133,26 @@
                 <div class="specs">
                     <ul>
                         <li>
-                            <b>Image Sensor</b>: 20.9MP DX-format CMOS sensor.
+                            <b>Camera Model:</b> <span id="valz">D3500</span>
                         </li>
+
+                        <li><b>Launch:</b>Year 2023</li>
+                        <li><b>Max Height:</b> 5 feet</li>
                         <li>
-                            <b>Processor</b>: EXPEED 5 for fast image processing
-                            and 4K video
+                            <b>Tripod Model:</b> <span id="valz">3500</span>
                         </li>
-                        <li>
-                            <b>Autofocus</b>: 51-point AF system with 15
-                            cross-type sensors.
-                        </li>
-                        <li>
-                            <b>ISO Range</b>: Versatile ISO from 100 to 51,200
-                            (expandable).
-                        </li>
-                        <li>
+                        <!-- <li>
                             <b>Speed</b>: Shoots up to 8 frames per second for
                             fast action capture.
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="buy">
-                    <div class="price">₹70,999</div>
-                    <div class="buttonDiv">
-                        <button onclick="window.location='contactUS.html' ">
-                            BUY NOW
-                        </button>
+                    <div class="price" id="change">₹14,000</div>
+                    <div class="buttonDiv" id="addCart">
+                        <button onclick="changeItm()">ADD TO CART</button>
                     </div>
                 </div>
-                <span
-                    >Not sure how to use ?
-                    <a href="https://youtu.be/Gi1copk_Sns?si=vYKuweNnrU_bJ5pp"
-                        >Click here</a
-                    ></span
-                >
             </div>
         </div>
 
@@ -150,10 +173,27 @@
         </div>
 
         <script>
+            //set an event listener on the button with id clearr
+            document.getElementById("clearr").addEventListener("click", function () {
+                //get the value of the button
+                let items = document.getElementById("uitm");
+                //set the value to 0
+                items.innerText = 0;
+            });
             function changeImage(ele) {
                 var image_id = document.getElementById("change");
-                image_id.src = ele.id;
+                image_id.innerHTML = ele.id;
+
+                var price = document.getElementById("valz");
+                price.innerHTML = ele.className;
+                // console.log(ele.className);
             }
+
+            function changeItm() {
+                let items = document.getElementById("uitm");
+                items.innerText = parseInt(items.innerText) + 1;
+            }
+            
         </script>
     </body>
 </html>
